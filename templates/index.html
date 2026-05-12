@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="statics/css/styles.css">
+    <title>Comprimir PDF</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo en la parte superior -->
+        <div class="logo-container">
+            <img src="../statics/images/logo.jpg" alt="Logo" class="logo">
+        </div>
+
+        <h1>Subir archivo PDF para comprimir</h1>
+        <form action="/upload/" method="post" enctype="multipart/form-data" class="form-upload">
+            <label for="file">Selecciona un archivo PDF:</label>
+            <input type="file" name="file" accept="application/pdf" required>
+            <button type="submit">Subir y Comprimir</button>
+        </form>
+
+    </div>
+</body>
+</html>
